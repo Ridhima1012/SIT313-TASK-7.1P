@@ -18,7 +18,7 @@ pipeline {
                     mail to: 'ridhima1012c@gmail.com',
                         subject: 'Executing unit and integration tests: Successfully',
                         body: 'Both integration and unit tests passed. Check logs for more information.'
-                        attachLog: true
+                        //attachLog: true
                 }
                 failure {
                     mail to: 'ridhima1012c@gmail.com',
