@@ -17,14 +17,14 @@ pipeline {
                 success {
                     mail to: 'ridhima1012c@gmail.com',
                         subject: 'Executing unit and integration tests: Successfully',
-                        body: 'Both integration and unit tests passed. Check logs for more information.',
-                        attachLog: true
+                        body: 'Both integration and unit tests passed. Check logs for more information.'
+                        //attachLog: true
                 }
                 failure {
                     mail to: 'ridhima1012c@gmail.com',
                         subject: 'Executing unit and integration tests: Failed',
-                        body: 'Both integration and unit tests have failed. Check logs for more information.',
-                        attachLog: true
+                        body: 'Both integration and unit tests have failed. Check logs for more information.'
+                        //attachLog: true
                         
                 }
                  
@@ -46,14 +46,14 @@ pipeline {
                 success {
                     mail to: 'ridhima1012c@gmail.com',
                         subject: 'Secuirty scan done: Successfully',
-                        body: 'Security scans passed.Check logs for more information.',
-                        attachLog: true
+                        body: 'Security scans passed.Check logs for more information.'
+                        //attachLog: true
                 }
                 failure {
                     mail to: 'ridhima1012c@gmail.com',
                         subject: 'Security Scans: Failed',
-                        body: 'Security scans have failed. Check logs for more information. ',
-                        attachLog: true
+                        body: 'Security scans have failed. Check logs for more information. '
+                        //attachLog: true
                         
                 }
                  
